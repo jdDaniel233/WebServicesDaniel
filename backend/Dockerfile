@@ -1,8 +1,8 @@
-from node:20.10.0-aloine3.18
+from node:20.10.0-alpine3.18
 
 WORKDIR package.json .
 
-RUN nmpi i
+RUN nmp i
 
 COPY index.js .
 
