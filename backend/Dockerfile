@@ -1,6 +1,8 @@
 from node:20.10.0-alpine3.18
 
-WORKDIR package.json .
+WORKDIR /app
+
+COPY package.json .
 
 RUN npm i
 
